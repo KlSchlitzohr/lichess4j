@@ -3,6 +3,8 @@ package de.lichess;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import de.lichess.account.AccountManager;
+import de.lichess.games.GamesManager;
+import de.lichess.relations.RelationsManager;
 import de.lichess.users.UsersManager;
 import lombok.Getter;
 
@@ -18,6 +20,8 @@ public class LichessClient {
 
     private AccountManager accountManager;
     private UsersManager usersManager;
+    private RelationsManager relationsManager;
+    private GamesManager gamesManager;
 
     public LichessClient(String token) {
         this.token = token;
@@ -29,6 +33,8 @@ public class LichessClient {
     private void createManagers() {
         this.accountManager = new AccountManager(this);
         this.usersManager = new UsersManager(this);
+        this.relationsManager = new RelationsManager(this);
+        this.gamesManager = new GamesManager(this);
     }
 
 }
