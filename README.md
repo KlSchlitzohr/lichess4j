@@ -17,7 +17,7 @@ LichessClient lichessClient = new LichessClient("{yourToken}");
 ```
 
 **LichessClient Manager**
-The LichessClient has for every rubric on the website an Manager.
+The LichessClient has a manager class for each information category.
 
 ```java
 AccountManager accountManager = lichessClient.getAccountManager();
@@ -25,7 +25,7 @@ UsersManager usersManager = lichessClient.getUsersManager();
 RelationsManager relationsManager = lichessClient.getRelationsManager();
 ```
 
-From there you can esaly make the Requets.
+From there you can easily make requests.
 
 ```java
 String email = accountManager.getEmail();
@@ -61,8 +61,8 @@ repositories {
 
 **Contributing to lichess4j**
 
-You are cordially invited to contribute this Projekt.
+You are cordially invited to contribute to this project.
 
 **Getting Help**
 
-If you need help or have questions you can contact me on Discord(KlSchlitzohr#1166).
+If you need help or have questions you can contact me on Discord (KlSchlitzohr#1166).
