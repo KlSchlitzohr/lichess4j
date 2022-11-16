@@ -51,7 +51,7 @@ public class HttpsRequestBuilder {
                 out.append(line);
             }
             manageResponseCode(connection);
-            System.out.println(out.toString());
+            //System.out.println(out.toString());
             return out.toString();
         } catch (IOException e) {
             e.printStackTrace();
